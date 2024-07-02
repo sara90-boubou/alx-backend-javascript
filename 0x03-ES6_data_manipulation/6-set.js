@@ -1,3 +1,4 @@
-export default function setFromArray(array) {
-  return new Set(array);
-}
+/* eslint-disable linebreak-style */
+const setFromArray = (arr) => new Set(arr);
+
+export default setFromArray;

@@ -1,6 +1,10 @@
-export default function getListStudentIds(arg) {
-  if (Array.isArray(arg)) {
-    return arg.map((arg) => arg.id);
+/* eslint-disable linebreak-style */
+const getListStudentIds = (listStudents) => {
+  if (Array.isArray(listStudents) === false) {
+    return [];
   }
-  return [];
-}
+
+  return listStudents.map((x) => x.id);
+};
+
+export default getListStudentIds;
